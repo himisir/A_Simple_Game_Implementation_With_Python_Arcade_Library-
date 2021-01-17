@@ -63,8 +63,7 @@ class Rect:
 class GameOverView(arcade.View):
     def __init__(self):
         super().__init__()
-        self.texture = arcade.set_background_color(arcade.color.WHITE)
-        # arcade.set_viewport(0, SCREEN_WIDTH-1, 0, SCREEN_HEIGHT -1)
+        arcade.set_background_color(arcade.color.WHITE)
         self.game_view = GameView()
         print(" Score: ", self.window.total_score)
 
